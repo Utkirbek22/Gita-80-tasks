@@ -6,3 +6,4 @@ for i in num:
         small = i
 print(small)
 #  done
+#  i think i have fixed the git push problem
