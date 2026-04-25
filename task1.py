@@ -5,3 +5,4 @@ for i in num:
     if i < small:
         small = i
 print(small)
+#  done
