@@ -1,42 +1,92 @@
 month_days = {
-    1: 31,  # January
-    2: 28,  # February (non-leap year)
-    3: 31,  # March
-    4: 30,  # April
-    5: 31,  # May
-    6: 30,  # June
-    7: 31,  # July
-    8: 31,  # August
-    9: 30,  # September
-    10: 31, # October
-    11: 30, # November
-    12: 31  # December
+    1: 31, 2: 28, 3: 31, 4: 30,
+    5: 31, 6: 30, 7: 31, 8: 31,
+    9: 30, 10: 31, 11: 30, 12: 31
 }
 
 day = 31
 month = 3
-max_day = month_days[month]
 
 if month in month_days:
+    max_day = month_days[month]
+
     if day == max_day and month == 12:
         day = 1
         month = 1
-        print(f"today is {day}.{month}")
+
     elif day == max_day:
-        month += 1
         day = 1
-        print(f"today is {day}.{month}")
-    elif month == max_day:
         month += 1
-        day = 1
-        print(f"today is {day}.{month}")
+
     elif day < max_day:
         day += 1
-        print(f"today is {day}.{month}")
+
     else:
-        print(f"{day} is out of range")
+        print("Invalid day")
+        exit()
+
+    print(f"today is {day}.{month}")
 else:
-    print("out of range")
+    print("Invalid month")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# month_days = {
+#     1: 31,  # January
+#     2: 28,  # February (non-leap year)
+#     3: 31,  # March
+#     4: 30,  # April
+#     5: 31,  # May
+#     6: 30,  # June
+#     7: 31,  # July
+#     8: 31,  # August
+#     9: 30,  # September
+#     10: 31, # October
+#     11: 30, # November
+#     12: 31  # December
+# }
+#
+# day = 31
+# month = 3
+# max_day = month_days[month]
+#
+# if month in month_days:
+#     if day == max_day and month == 12:
+#         day = 1
+#         month = 1
+#         print(f"today is {day}.{month}")
+#     elif day == max_day:
+#         month += 1
+#         day = 1
+#         print(f"today is {day}.{month}")
+#     elif month == max_day:
+#         month += 1
+#         day = 1
+#         print(f"today is {day}.{month}")
+#     elif day < max_day:
+#         day += 1
+#         print(f"today is {day}.{month}")
+#     else:
+#         print(f"{day} is out of range")
+# else:
+#     print("out of range")
 
 
 
