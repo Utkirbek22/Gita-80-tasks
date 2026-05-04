@@ -10,11 +10,37 @@
 # result = digitnum(98765, 1)
 # print(result)
 
+#
+# def digitnum(num, k):
+#     num = str(num)
+#     if len(num) < k -1:
+#         return -1
+#     return int(num[k])  # what index goes here?
+# result = digitnum(98765, 9)
+# print(result)
 
-def digitnum(num, k):
-    num = str(num)
-    if len(num) < k -1:
+
+def digitNum(n,k):
+    n = str(n)
+    if len(n) < k -1:
         return -1
-    return int(num[k])  # what index goes here?
-result = digitnum(98765, 9)
-print(result)
+    return int(n[k])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
