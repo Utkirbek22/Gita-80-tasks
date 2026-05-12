@@ -15,6 +15,6 @@ for i in range(m):
             col = j
 matrix.pop(row)
 
-for i in range(len(matrix)):
-    print(*matrix[i])
+for row in matrix:
+    print(*row)
 
