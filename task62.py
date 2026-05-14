@@ -1,5 +1,3 @@
-from os.path import split
-
 s = r"D:\flag.png"
 
 word = s.split("\\")
